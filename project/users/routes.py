@@ -1,10 +1,9 @@
-from flask import Blueprint, render_template
-
-# Config
-users_bp = Blueprint('users_bp', __name__, template_folder='template')
+from flask import render_template, request, redirect, url_for
+from . import users_bp
+from project import db
 
 
 # Routes
 @users_bp.route('/login')
 def login():
-    return render_template('login.html')
+    return render_template('users/login.html')

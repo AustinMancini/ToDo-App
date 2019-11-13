@@ -11,6 +11,8 @@ flask-sqlalchemy = "*"
 flask-marshmallow = "*"
 flask-script = "*"
 flask-migrate = "*"
+flask-wtf = "*"
+wtforms = "*"
 
 [requires]
 python_version = "3.7"

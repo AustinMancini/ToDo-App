@@ -1,12 +1,10 @@
-from flask import Flask, Blueprint, jsonify, request, render_template, redirect
+from flask import render_template
 
-# Config
-tasks_bp = Blueprint('tasks_bp', __name__, template_folder='templates')
+from . import tasks_bp
+
 
 # Routes
-@tasks_bp.route('/', methods = ['GET'])
+@tasks_bp.route('/')
 def index():
-    """Show a user their list of tasks."""
-    return render_template('index.html')
-
+    return render_template('tasks/index.html')
 

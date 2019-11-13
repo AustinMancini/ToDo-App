@@ -1,6 +1,6 @@
 # ToDo App with Flask and SQL Alchemy
 
-A simple ToDo list web application utilizing Python and Flask.
+A simple ToDo list web application utilizing Python, Flask and SQLAlchemy.
 
 
 ## Built With
